@@ -1,0 +1,78 @@
+.footer {
+    background-color: $footer-bckgrndColor;
+    padding: 67px 0 50px 0;
+
+    &__copyright {
+        @extend %footer-titleColor;
+        padding-top: 90px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__city-title,
+    &__info-title,
+    &__about-title,
+    &__contact-title {
+        @extend %footer-titleColor;
+        padding-bottom: 15px;
+        @extend %text-footer-title;
+    }
+
+    &__contact {
+        text-align: right
+    }
+
+    // &__city {
+    //     margin-right: 43px
+    // }
+
+    // &__info {
+    //     margin-right: 152px
+    // }
+
+    // &__about {
+    //     margin-right: 273px
+    // }    
+}
+
+.city, 
+.info,
+.about,
+.contact {
+    &-menu__link {
+        @extend %text-footer-link;
+    }
+}
+
+.city,
+.info,
+.about {
+    &-menu__list-item {
+        margin-bottom: 13px;
+    }
+}
+
+.contact {    
+    &__content-num {
+        padding-bottom: 10px;
+        @extend %text-footer-num;
+    }
+
+    &__content-address {
+        padding-bottom: 21px;
+        text-transform: capitalize;
+        @extend %footer-titleColor;
+        font-size: 13px;
+        line-height: 130%;
+    }
+
+    &__content-follow {
+        padding-bottom: 30px;
+        @extend %text-footer-follow;
+    }
+}

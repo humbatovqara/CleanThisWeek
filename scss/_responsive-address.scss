@@ -1,0 +1,38 @@
+@media only screen and (max-width: 320px) {
+    .address {
+        &__inner {
+            flex-direction: column;
+            padding: 0;
+            padding-top: 40px;
+        }
+    }
+
+    .address__left {
+        margin-right: 0;
+
+        .address__title {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .address__list {
+            padding: 25px 25px 20px 15px;
+        }
+
+        .address__list-item {
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #595959;
+        }
+    }
+
+    .address__right {
+        iframe {
+            width: 320px;
+            height: 156px;
+        }
+    }
+}

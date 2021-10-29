@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+}

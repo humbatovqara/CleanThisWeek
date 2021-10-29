@@ -1,0 +1,41 @@
+.offer {
+    padding: 120px 0 150px 0;
+
+    &-boxs {
+        display: flex;
+    }
+
+    &-boxs__left {
+        margin-right: 30px;
+    }
+}
+
+.offer-title {
+    &__head {
+        @extend %text-offer-title;
+    }
+
+    &__text {
+        @extend %text-offer-subtitle;
+        padding: 11px 0 60px 0;    
+    }
+}
+
+.offer-box {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    width: 570px;
+
+    &__title {
+        @extend %flex-header;
+        justify-content: space-between;
+        @extend %text-offer-box-title;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        @extend %text-offer-box-text;
+    }
+}

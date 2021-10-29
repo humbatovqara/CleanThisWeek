@@ -1,0 +1,32 @@
+.protect {
+    background-image: url(../img/protect-background.png);
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__left--img-desktop {
+        position: relative;
+        top: -9%;
+    }
+
+    &__left--img-mobile {
+        display: none;
+    }
+}
+
+.protect__right {
+    padding: 100px 0 0 50px;
+    
+    &-head {
+        @extend %text-protect-title;
+        padding-bottom: 30px;
+    }
+
+    &-text {
+        @extend %text-protect-content;
+        width: 500px;
+    }
+}

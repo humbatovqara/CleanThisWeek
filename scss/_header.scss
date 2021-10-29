@@ -1,0 +1,48 @@
+.header {
+    &__inner {
+        @extend %flex-header;
+        justify-content: space-between;
+        padding: 22px 0;
+    }
+
+    &__left {
+        @extend %flex-header;
+        margin-right: -200px;
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__left-logo--mobile {
+        display: none;
+    }
+}
+
+.menu {
+    &__list {
+        @extend %flex-header;
+    }
+
+    &__list-item {
+        padding-right: 35px;
+    }
+
+    &__list-link {
+        @extend %text-header-menu;
+    }
+}
+
+.flag {
+    @extend %flex-header;
+
+    &__content {
+        padding-right: 16px;
+        @extend %text-header-flag;
+    }
+
+    &__img--circle {
+        border-radius: 50%;
+        border: 1px solid #c4c4c4;
+    }
+}

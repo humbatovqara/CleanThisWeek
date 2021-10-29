@@ -1,0 +1,19 @@
+@media only screen and (max-width: 320px) {
+    .footer {
+        padding: 67px 40px 50px 40px;
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__city,
+        &__info,
+        &__about {
+            margin-bottom: 40px;
+        }
+
+        &__contact {
+            text-align: left;
+        }
+    }
+}

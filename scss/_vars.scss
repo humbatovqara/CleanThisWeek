@@ -1,0 +1,385 @@
+/* Colors */
+$header-grey: #666666;
+$title-grey:#595959;
+$dark-grey: #4D4D4D;
+$light-grey: #808080;
+$green: #56B84E;
+$green-light: #79DD70;
+$footer-bckgrndColor: #333333;
+
+%footer-titleColor {
+    color: #fff;
+    opacity: .4;
+}
+
+
+
+
+
+/* Flexbox */
+%flex-header {
+    display: flex;
+    align-items: center;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Fonts */
+%font-sailec {
+    font-family: 'Roboto', sans-serif; //Change Sailec
+}
+
+%font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+/* Texts, Content */
+/* Header Content */
+%text-header-menu {
+    font: {
+        weight: 700;
+        size: 15px;
+    }
+
+    color: #000;
+    text-transform: uppercase;
+    @extend %font-sailec;
+    line-height: 19px;
+}
+
+%text-header-flag {
+    font: {
+        weight: 700;
+        size: 12px;
+    }
+
+    color: $header-grey;
+    text-align: right;
+    text-transform: uppercase;
+    @extend %font-sailec;
+    letter-spacing: 0.1em;
+}
+
+
+
+/* Cover Glass Content */
+%text-coverglass-title {
+    font: {
+        size: 36px;
+        weight: 700;
+    }
+
+    color: $title-grey;
+    text-transform: capitalize;
+    @extend %font-sailec;
+    line-height: 40px;
+}
+
+%text-coverglass-menu {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+
+    color: $title-grey;
+    text-transform: uppercase;
+    @extend %font-roboto;
+    line-height: 19px;
+}
+
+
+
+/* Offer Content */
+%text-offer-title {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+
+    color: $dark-grey;
+    text-transform: capitalize;
+    text-align: center;
+    @extend %font-sailec;
+    line-height: 50px;
+}
+
+%text-offer-subtitle {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+
+    color: $title-grey;
+    text-align: center;
+    @extend %font-roboto;
+    line-height: 18px;
+}
+
+%text-offer-box-title {
+    font: {
+        size: 18px;
+        weight: 700;
+    }
+
+    color: $green;
+    text-transform: capitalize;
+    @extend %font-ubuntu;
+    line-height: 21px;
+}
+
+%text-offer-box-text {
+    font: {
+        size: 16px;
+    }
+
+    color: $title-grey;
+    text-align: justify;
+    @extend %font-roboto;
+    line-height: 22px;
+}
+
+
+
+/* Protect */
+%text-protect-title {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+
+    color: $green;
+    text-transform: capitalize;
+    @extend %font-sailec;
+    line-height: 52px;
+}
+
+%text-protect-content {
+    font: {
+        size: 20px;
+    }
+
+    color: $dark-grey;
+    text-align: justify;
+    @extend %font-roboto;
+    line-height: 28px;
+}
+
+
+
+/* Cut corner */
+%text-cutcorner-card-title {
+    font: {
+        size: 16px;
+        weight: 700;
+    }
+
+    color: $dark-grey;
+    text-align: center;
+    @extend %font-roboto;
+    line-height: 21px;
+}
+
+%text-cutcorner-card-content {
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+
+    color: $title-grey;
+    text-align: center;
+    @extend %font-roboto;
+    line-height: 19px;
+}
+
+
+
+/* Download App */
+%text-download-content {
+    font: {
+        size: 36px;
+        weight: 700;
+    }
+
+    color: $dark-grey;
+    @extend %font-sailec;
+    line-height: 46px;
+}
+
+
+
+/* Goal */
+%text-goal-content {
+    font: {
+        size: 22px;
+        weight: 400;
+    }
+
+    color: $title-grey;
+    @extend %font-sailec;
+    line-height: 39px;
+}
+
+%text-goal-author {
+    font: {
+        size: 24px;
+        weight: 700;
+    }
+
+    color: $dark-grey;
+    @extend %font-sailec;
+    line-height: 31px;
+}
+
+%text-goal-author-subtitle {
+    font: {
+        size: 18px;
+        weight: 400;
+    }
+
+    color: $light-grey;
+    @extend %font-roboto;
+    line-height: 23px;
+}
+
+
+
+/* Client comment */
+%text-client-title {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    @extend %font-sailec;
+    line-height: 50px;
+}
+
+%text-client-subtitle {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    @extend %font-roboto;
+    line-height: 18px;
+}
+
+
+
+/* Address */
+%text-address-title {
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+
+    color: $dark-grey;
+    text-transform: capitalize;
+    @extend %font-sailec;
+    line-height: 50px;
+}
+
+
+
+/* Cover */
+%text-cover-title {
+    font: {
+        size: 36px;
+        weight: 700;
+    }
+
+    color: $green;
+    text-align: center;
+    text-transform: capitalize;
+    @extend %font-sailec;
+}
+
+
+
+/* Footer */
+%text-footer-title {
+    font: {
+        size: 12px;
+        weight: 700;
+    }
+
+    text-transform: uppercase;
+    @extend %font-sailec;
+}
+
+%text-footer-link {
+    font: {
+        size: 13px;
+        weight: 500;
+    }
+
+    color: #fff;
+    opacity: .8;
+    @extend %font-roboto;
+    text-transform: capitalize;
+    line-height: 13px;
+}
+
+%text-footer-num {
+    font: {
+        size: 24px;
+        weight: 700px;
+    }
+
+    color: #fff;
+    opacity: 0.8;
+    @extend %font-sailec;
+}
+
+%text-footer-follow {
+    font: {
+        size: 12px;
+        weight: 500;
+    }
+
+    @extend %footer-titleColor;
+    @extend %font-ubuntu;
+    text-transform: uppercase;
+    line-height: 130%;
+    letter-spacing: 0.12em;
+}
+
+
+
+/* Statusbar */
+%text-statusbar {
+    font: {
+        size: 9px;
+        weight: 700;
+    }
+
+    color: $header-grey;
+    text-align: center;
+    @extend %font-sailec;
+    text-transform: uppercase;
+    letter-spacing: 2.7em;
+    line-height: 11px;
+    opacity: 0.3;
+}

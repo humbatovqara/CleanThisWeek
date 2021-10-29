@@ -1,0 +1,10 @@
+.statusbar {
+    display: none;
+    background: #E6E6E6;
+
+    &__inner {
+        @extend %flex-center;
+        padding: 7px 0 5px 0;
+        @extend %text-statusbar;    
+    }
+}

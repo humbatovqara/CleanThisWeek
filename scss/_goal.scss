@@ -1,0 +1,44 @@
+.goal {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+    }
+}
+
+.goal__right {
+    padding-left: 68px;
+
+    &-nail {
+        margin-bottom: 46px;
+    }
+
+    &-text {
+        @extend %text-goal-content;
+    }
+
+    &-solid {
+        margin: 30px 0;
+        width: 46px;
+        height: 4px;
+        background-color: $green;
+    }
+
+    &-author {
+        @extend %text-goal-author;
+    }
+
+    &-subtitle {
+        @extend %text-goal-author-subtitle;
+    }
+
+    &-text--bold {
+        font-weight: bold;
+    }
+
+    &-text--link {
+        color: #56B84E;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

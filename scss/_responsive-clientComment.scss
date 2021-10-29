@@ -1,0 +1,46 @@
+@media only screen and (max-width: 320px) {
+    .clientComment {
+        background-position: center;
+        background-size: cover;
+
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .slide {
+        &__image {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        &__image--mobile {
+            display: block;
+        }
+
+        &__prev,
+        &__next {
+            top: 40%;
+        }
+
+        &__prev {
+            left: -3%;
+        }
+
+        &__next {
+            right: -3%;
+        }
+
+        &__dotbox {
+            margin-top: 40px;
+        }
+    }
+}

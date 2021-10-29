@@ -1,0 +1,44 @@
+@media only screen and (max-width: 320px) {
+    .downloadApp {
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__effect {
+            display: none;
+        }
+
+        &__middle {
+            order: 1;
+        }
+
+        &__left {
+            order: 2;
+        }
+
+        &__right {
+            order: 3;
+        }
+    }
+
+    .downloadApp__phone {
+        &--desktop {
+            display: none;
+        }
+
+        &--mobile {
+            display: block;
+            margin-top: -60%;
+        }
+    }
+
+    .downloadApp__left,
+    .downloadApp__right {
+        justify-content: center;
+
+        &-text {
+            display: none;
+        }
+    }
+}

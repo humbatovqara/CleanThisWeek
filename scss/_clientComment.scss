@@ -1,0 +1,97 @@
+.clientComment {
+    background-image: url(../img/client-comment-background.png);
+    background-repeat: no-repeat;
+    min-height: 510px;
+
+    &__content {
+        @extend %flex-center;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    &__title {
+        @extend %text-client-title;
+        padding: 60px 0 11px 0;
+    }
+
+    &__subtitle {
+        @extend %text-client-subtitle;
+        padding-bottom: 59px;
+    }
+
+    &__slide {
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+
+    &__image--mobile {
+        display: none;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 30%;
+        transform: translate(0, -50%);
+        padding: 12px 18px;
+        transition: 0.1s;
+        user-select: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    &__prev:hover,
+    &__next:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    &__prev {
+        left: 20%;
+    }
+
+    &__next {
+        right: 20%;
+    }
+
+    &__dotbox {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    &__dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        background: #FFFFFF;
+        opacity: 0.5;
+    }
+}
+
+.active,
+.slide__dot:hover {
+    opacity: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

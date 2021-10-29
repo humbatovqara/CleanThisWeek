@@ -1,0 +1,13 @@
+.cover {
+    padding: 120px 0;
+
+    &__inner {
+        @extend %flex-center;
+        flex-direction: column;
+    }
+
+    &__title {
+        @extend %text-cover-title;
+        margin-bottom: 20px;
+    }
+}

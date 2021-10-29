@@ -1,0 +1,32 @@
+.address {
+    &__inner {
+        background-color: #F8F8F8;
+        border-radius: 20px;
+        display: flex;
+        padding: 60px 50px;
+    }
+
+    &__left {
+        margin-right: 113px;
+    }
+
+    &__title {
+        @extend %text-address-title;
+        margin-bottom: 41px;
+    }
+
+    &__list-item {
+        @extend %flex-header;
+        margin-bottom: 15px;
+        color: #595959;
+        font-size: 16px;
+    }
+
+    &__list-icon {
+        margin-right: 15px;
+    }
+
+    &__list-link {
+        color: #595959;
+    }
+}
